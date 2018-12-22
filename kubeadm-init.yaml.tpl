@@ -1,6 +1,6 @@
 apiVersion: kubeadm.k8s.io/v1alpha1
 kind: MasterConfiguration
-kubernetesVersion: v1.10.3
+kubernetesVersion: v1.10.5
 api:
   advertiseAddress: K8SHA_IPLOCAL
 networking:
@@ -20,4 +20,4 @@ etcd:
   - http://K8SHA_IP2:2379
   - http://K8SHA_IP3:2379
 token: K8SHA_TOKEN
-tokenTTL: "0"
+tokenTTL: "86400"
