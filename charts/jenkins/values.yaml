@@ -136,7 +136,10 @@ Master:
   # ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#taints-and-tolerations-beta-feature
   NodeSelector: 
   jenkins: true
-  Tolerations: {}
+  Tolerations: 
+  - key: "key"
+    effect: "NoSchedule"
+    operator: "Exists"
   PodAnnotations: {}
 
   Ingress:
@@ -182,9 +185,12 @@ Agent:
   # - type: Secret
   #   secretName: mysecret
   #   mountPath: /var/myapp/mysecret
-  NodeSelector: {}
-  # Key Value selectors. Ex:
+ NodeSelector: 
   jenkins: true
+  Tolerations: 
+  - key: "key"
+    effect: "NoSchedule"
+    operator: "Exists"
 
 Persistence:
   Enabled: true
