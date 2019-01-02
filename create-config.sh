@@ -50,7 +50,7 @@ export ETCD_TOKEN=9489bc68bdfe1b9ae037d6fd9e7efefd
 export K8SHA_TOKEN=yf0t14.7ekahffaetbdphqg
 
 # kubernetes CIDR pod subnet, if CIDR pod subnet is "10.244.0.0/16" please set to "10.244.0.0\\/16"
-export K8SHA_CIDR=192.198.0.0\\/16
+export K8SHA_CIDR=192.168.0.0\\/16
 
 
 ##############################
