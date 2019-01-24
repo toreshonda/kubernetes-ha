@@ -29,8 +29,7 @@ ingress:
 
 resources: {}
 
-nodeSelector:
- "jenkins"="false"
+nodeSelector: {}
 
 tolerations: []
 

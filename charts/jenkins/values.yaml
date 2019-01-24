@@ -139,8 +139,7 @@ Master:
    Tolerations:
   - effect: NoSchedule
     key: key
-    operator: Equal
-    value: value
+    operator: Exists    
   PodAnnotations: {}
 
   Ingress:

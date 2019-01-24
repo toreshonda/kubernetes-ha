@@ -129,8 +129,7 @@ persistence:
   accessMode: ReadWriteOnce
   size: 10Gi
 
-nodeSelector: 
-jenkins: false
+nodeSelector: {}
 
 tolerations: []
 
