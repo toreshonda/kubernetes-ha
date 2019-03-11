@@ -1,15 +1,16 @@
 version: "2"
 
 services:
-
-  frontend:
+  docker-web:
     image: klausmeyer/docker-registry-browser
+    container_name: docker-web
     environment:
-      - "DOCKER_REGISTRY_URL=http://10.110.2.201:30005"
+      - "DOCKER_REGISTRY_URL=http://172.20.141.98:30005"
       - "NO_SSL_VERIFICATION=true"
-      - "BASIC_AUTH_USER=admin"
-      - "BASIC_AUTH_PASSWORD=Rhjirf356"
+      - "BASIC_AUTH_USER=dockeruser"
+      - "BASIC_AUTH_PASSWORD=1qaz2wsx"
       - "ENABLE_DELETE_IMAGES=true"
     ports:
-      - "8002:8080"
+      - "8000:8080"
     restart: always
+
