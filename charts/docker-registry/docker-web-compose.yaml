@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+
+  frontend:
+    image: klausmeyer/docker-registry-browser
+    environment:
+      - "DOCKER_REGISTRY_URL=http://10.110.2.201:30005"
+      - "NO_SSL_VERIFICATION=true"
+      - "BASIC_AUTH_USER=admin"
+      - "BASIC_AUTH_PASSWORD=Rhjirf356"
+      - "ENABLE_DELETE_IMAGES=true"
+    ports:
+      - "8002:8080"
+    restart: always
